@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: vvk17-JWS
+  host: vvk17-JWS
+  disk_quota: 1024M
+  services:
+  - vvk17-JWS-cloudantNoSQLDB
+  - vvk17-JWS-WorkloadScheduler
